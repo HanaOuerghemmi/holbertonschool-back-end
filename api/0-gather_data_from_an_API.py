@@ -11,9 +11,9 @@ if __name__ == "__main__":
     finished = []
     for fin in todos:
         if fin.get("completed") is True:
-            finished.append(fin)
+            finished.append(fin.get("title"))
     print("Employee {} is done with tasks ({}/{}):".format(user.get("name"),
                                                            len(finished), len(todos)))
 
     for fin in finished:
-        print("\t {}".format(fin.get("title")))
+        print("\t {}".format(finished))
