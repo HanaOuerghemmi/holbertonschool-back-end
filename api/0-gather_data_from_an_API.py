@@ -16,5 +16,5 @@ if __name__ == "__main__":
                                                            len(finished), len(todos)))
 
     for fin in finished:
-        print("\t {}".format(finished))
+        print("\t {}".format(fin))
 
