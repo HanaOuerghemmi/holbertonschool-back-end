@@ -9,10 +9,10 @@ if __name__ == "__main__":
     todos = requests.get(
         api_url + "todos", params={"userId": sys.argv[1]}).json()
 
-    nameFile =str(eval(sys.argv[1])) + ".csv"
+    nameFile = str(eval(sys.argv[1])) + ".csv"
 
     f = open(nameFile, "x")
     for task in todos:
-        s = '"'+ str(user.get("id")) + '","' + str(
-        user.get("username")) + '","' + str(task.get("completed")) + '","' + str(task.get("title")) + '"' +"\n"
+        s = '"' + str(user.get("id")) + '","' + str(
+            user.get("username")) + '","' + str(task.get("completed")) + '","' + str(task.get("title")) + '"' + "\n"
         f.write(s)
