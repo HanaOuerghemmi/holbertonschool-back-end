@@ -17,4 +17,3 @@ if __name__ == "__main__":
 
     for fin in finished:
         print("\t {}".format(fin))
-
