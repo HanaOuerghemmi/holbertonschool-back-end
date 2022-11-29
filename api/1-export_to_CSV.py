@@ -13,8 +13,8 @@ if __name__ == "__main__":
 
     f = open(nameFile, "x")
     for task in todos:
-        s = '"' + str(user.get("id")) + '","' + str(
+        s = ('"' + str(user.get("id")) + '","' + str(
             user.get("username")) + '","' +
-        str(task.get("completed")) + '","' + \
-            str(task.get("title")) + '"' + "\n"
+            str(task.get("completed")) + '","' +
+            str(task.get("title")) + '"' + "\n")
         f.write(s)
