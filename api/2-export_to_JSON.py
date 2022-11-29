@@ -13,7 +13,8 @@ if __name__ == "__main__":
 
     dicti = {str(user.get("id")): [{"task": task.get("title"),
                                     "completed": task.get("completed"),
-                                    "username": user.get("username")}for task in todos]}
+                                    "username": user.get("username")}
+                                   for task in todos]}
 
     file_json = sys.argv[1] + ".json"
     with open(file_json, "w") as f:
