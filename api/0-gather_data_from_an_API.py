@@ -9,9 +9,9 @@ if __name__ == "__main__":
     todos = requests.get(
         url + "todos", params={"userId": argv[1]}).json()
     finished = []
-    for fin in todos:
-        if fin.get("completed") is True:
-            finished.append(fin.get("title"))
+    for to in todos:
+        if to.get("completed") is True:
+            finished.append(to.get("title"))
     print("Employee {} is done with tasks ({}/{}):".format(user.get("name"),
                                                            len(finished), len(todos)))
 
